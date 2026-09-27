@@ -1,0 +1,3 @@
+C:/Users/shaki/Desktop/TradingApp/build/CMakeFiles/TradingApplication.dir
+C:/Users/shaki/Desktop/TradingApp/build/CMakeFiles/edit_cache.dir
+C:/Users/shaki/Desktop/TradingApp/build/CMakeFiles/rebuild_cache.dir

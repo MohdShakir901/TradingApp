@@ -1,0 +1,5 @@
+# ninja log v7
+70	1246	8122313310799968	CMakeFiles/TradingApplication.dir/src/Account.cpp.obj	b8d474ab4f03d9bd
+53	961	8122316639677096	CMakeFiles/TradingApplication.dir/src/main.cpp.obj	b2647af0fafe826e
+64	1158	8122316639744867	CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj	a6838cff84b28602
+1158	1524	8122316650721000	TradingApplication.exe	655a4b7dc82eadff
