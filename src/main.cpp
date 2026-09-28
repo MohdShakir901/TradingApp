@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../include/Account.h"
-#include "../include/stock.h"
+#include "../include/Stock.h"
 
 using namespace std;
 
@@ -47,6 +47,7 @@ int main()
         }
 
         case 3:
+        {
             double amount;
 
             cout << "\nEnter amount to withdraw: ";
@@ -54,12 +55,14 @@ int main()
 
             account.withdraw(amount);
             break;
-
+        }
         case 4:
+        {
             tcs.displayStock();
             cout << "\nBuy Stock selected.\n";
             
             break;
+        }
 
         case 5:
             cout << "\nSell Stock selected.\n";

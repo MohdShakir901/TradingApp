@@ -11,7 +11,7 @@ class Account{
     double balance;
 
     public:
-    Account(int id, std::string name, std::string email, double balance);
+    Account(int id, std::string name, std::string email, double balance = 0.0);
 
     void showAccountInfo() const;
     void deposit(double amount);

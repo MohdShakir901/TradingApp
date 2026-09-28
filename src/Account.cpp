@@ -3,12 +3,13 @@
 #include<iostream>
 using namespace std;
 
-Account::Account(int id, std::string name, std::string email, double balance = 0.0){
-    this->accountId = id;
-    this->name = name;
-    this->email = email;
-    this->balance = balance;
-};
+Account::Account(int id, std::string name, std::string email, double balance)
+    : accountId(id),
+      name(name),
+      email(email),
+      balance(balance)
+{
+}
 
 void Account::showAccountInfo() const{
     cout << "\n========== ACCOUNT INFORMATION ==========\n";
