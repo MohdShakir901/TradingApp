@@ -9,6 +9,7 @@ add_executable(TradingApplication
     src/main.cpp
     src/Account.cpp
     src/Stock.cpp
+    src/Holding.cpp
 )
 
 target_include_directories(TradingApplication PRIVATE

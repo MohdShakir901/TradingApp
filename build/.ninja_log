@@ -1,5 +1,9 @@
 # ninja log v7
-70	1246	8122313310799968	CMakeFiles/TradingApplication.dir/src/Account.cpp.obj	b8d474ab4f03d9bd
-53	961	8122316639677096	CMakeFiles/TradingApplication.dir/src/main.cpp.obj	b2647af0fafe826e
-64	1158	8122316639744867	CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj	a6838cff84b28602
-1158	1524	8122316650721000	TradingApplication.exe	655a4b7dc82eadff
+303	2317	8124356072414806	CMakeFiles/TradingApplication.dir/src/Account.cpp.obj	b8d474ab4f03d9bd
+122	2313	8124356070609699	CMakeFiles/TradingApplication.dir/src/main.cpp.obj	b2647af0fafe826e
+313	2275	8124356072532140	CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj	a6838cff84b28602
+2319	2950	8124356092584461	TradingApplication.exe	655a4b7dc82eadff
+116	1467	8124372440572961	build.ninja	aff6f2f1213c42c4
+116	1467	8124372440572961	C:/Users/shaki/Desktop/TradingApp/build/cmake_install.cmake	aff6f2f1213c42c4
+53	1632	8124372441880658	CMakeFiles/TradingApplication.dir/src/Holding.cpp.obj	c8514f201b92fe4
+1634	2267	8124372457665217	TradingApplication.exe	d89d529b4f085f06
