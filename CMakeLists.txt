@@ -10,6 +10,9 @@ add_executable(TradingApplication
     src/Account.cpp
     src/Stock.cpp
     src/Holding.cpp
+    src/Portfolio.cpp
+    src/Transaction.cpp
+    src/TransactionHistory.cpp
 )
 
 target_include_directories(TradingApplication PRIVATE

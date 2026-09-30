@@ -1,6 +1,8 @@
 #include <iostream>
 #include "../include/Account.h"
 #include "../include/Stock.h"
+#include "../include/Portfolio.h"
+#include "../include/TransactionHistory.h"
 
 using namespace std;
 
@@ -8,6 +10,8 @@ int main()
 {
     Account account(1001, "Shakir", "shakir@example.com", 50000.0);
     Stock tcs(1, "TCS", "Tata Consultancy Services", 3500.00);
+    Portfolio portfolio;
+    TransactionHistory transactionHistory;
 
     int choice;
 
@@ -58,24 +62,87 @@ int main()
         }
         case 4:
         {
-            tcs.displayStock();
-            cout << "\nBuy Stock selected.\n";
-            
+            //cout << "\nBuy Stock selected.\n";
+            int quantity;
+
+            cout << "\nEnter quantity to buy : ";
+            cin >> quantity;
+
+            if(quantity <= 0){
+                cout << "Invalid Quantity.\n";
+                break;
+            }
+
+            double totalCost = quantity * tcs.getPrice();
+
+            cout << "\nTotal Cost: ₹" << totalCost << endl;
+
+            if (totalCost > account.getBalance())
+            {
+                cout << "Insufficient balance.\n";
+                break;
+            }
+
+            account.withdraw(totalCost);
+
+            portfolio.addHolding(tcs, quantity, tcs.getPrice());
+
+            transactionHistory.addTransaction(
+                "BUY",
+                tcs.getSymbol(),
+                quantity,
+                tcs.getPrice()
+            );
+
+            cout << "Stock purchased successfully!\n";
+
             break;
         }
 
         case 5:
-            cout << "\nSell Stock selected.\n";
-            
-            break;
+        {
+            int quantity;
 
+            tcs.displayStock();
+
+            cout << "\nEnter quantity to sell: ";
+            cin >> quantity;
+
+            if (quantity <= 0)
+            {
+                cout << "Invalid quantity.\n";
+                break;
+            }
+
+            double saleAmount = quantity * tcs.getPrice();
+
+            cout << "\nSale Amount: ₹" << saleAmount << endl;
+
+            if (portfolio.sellStock(tcs.getSymbol(), quantity))
+            {
+                account.deposit(saleAmount);
+
+                transactionHistory.addTransaction(
+                    "SELL",
+                    tcs.getSymbol(),
+                    quantity,
+                    tcs.getPrice()
+                );
+
+                cout << "Sale completed successfully!\n";
+            }
+
+            break;
+        }
         case 6:
-            cout << "\nPortfolio selected.\n";
+            portfolio.displayPortfolio();
+            //cout << "\nPortfolio selected.\n";
            
             break;
 
         case 7:
-            cout << "\nTransaction History selected.\n";
+           // cout << "\nTransaction History selected.\n";
+           transactionHistory.displayHistory();
            
             break;
 
