@@ -100,6 +100,14 @@ build CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj: CXX_COMP
   OBJECT_FILE_DIR = CMakeFiles\TradingApplication.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\TradingApplication.dir
 
+build CMakeFiles/TradingApplication.dir/src/StockMarket.cpp.obj: CXX_COMPILER__TradingApplication_unscanned_ C$:/Users/shaki/Desktop/TradingApp/src/StockMarket.cpp || cmake_object_order_depends_target_TradingApplication
+  DEP_FILE = CMakeFiles\TradingApplication.dir\src\StockMarket.cpp.obj.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -IC:/Users/shaki/Desktop/TradingApp/include
+  OBJECT_DIR = CMakeFiles\TradingApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles\TradingApplication.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\TradingApplication.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TradingApplication
@@ -108,7 +116,7 @@ build CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj: CXX_COMP
 #############################################
 # Link the executable TradingApplication.exe
 
-build TradingApplication.exe: CXX_EXECUTABLE_LINKER__TradingApplication_ CMakeFiles/TradingApplication.dir/src/main.cpp.obj CMakeFiles/TradingApplication.dir/src/Account.cpp.obj CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj CMakeFiles/TradingApplication.dir/src/Holding.cpp.obj CMakeFiles/TradingApplication.dir/src/Portfolio.cpp.obj CMakeFiles/TradingApplication.dir/src/Transaction.cpp.obj CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj
+build TradingApplication.exe: CXX_EXECUTABLE_LINKER__TradingApplication_ CMakeFiles/TradingApplication.dir/src/main.cpp.obj CMakeFiles/TradingApplication.dir/src/Account.cpp.obj CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj CMakeFiles/TradingApplication.dir/src/Holding.cpp.obj CMakeFiles/TradingApplication.dir/src/Portfolio.cpp.obj CMakeFiles/TradingApplication.dir/src/Transaction.cpp.obj CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj CMakeFiles/TradingApplication.dir/src/StockMarket.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TradingApplication.dir
   POST_BUILD = cd .

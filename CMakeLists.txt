@@ -13,6 +13,7 @@ add_executable(TradingApplication
     src/Portfolio.cpp
     src/Transaction.cpp
     src/TransactionHistory.cpp
+    src/StockMarket.cpp
 )
 
 target_include_directories(TradingApplication PRIVATE
