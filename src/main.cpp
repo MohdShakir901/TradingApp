@@ -4,6 +4,7 @@
 #include "../include/Portfolio.h"
 #include "../include/TransactionHistory.h"
 #include "../include/StockMarket.h"
+#include "../include/FileManager.h"
 
 using namespace std;
 
@@ -14,6 +15,12 @@ int main()
     Portfolio portfolio;
     TransactionHistory transactionHistory;
     StockMarket market;
+
+    std::vector<Transaction> loadedTransactions =
+        FileManager::loadTransactions("data/transactions.txt");
+
+    transactionHistory.loadTransactions(loadedTransactions);
+    
 
     market.addStock(
         Stock(1, "TCS", "Tata Consultancy Services", 3500.00)
@@ -136,6 +143,10 @@ int main()
                 quantity,
                 stock->getPrice());
 
+            FileManager::saveTransactions(
+                transactionHistory.getTransactions(),  "data/transactions.txt"
+            );
+
             cout << "Stock purchased successfully!\n";
 
             break;
@@ -183,7 +194,9 @@ int main()
                     stock->getPrice()
                 );
 
-                cout << "Sale completed successfully!\n";
+                FileManager::saveTransactions(
+                    transactionHistory.getTransactions(),
+                    "data/transactions.txt");
             }
 
             break;

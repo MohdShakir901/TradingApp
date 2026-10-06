@@ -38,3 +38,21 @@ void TransactionHistory::displayHistory() const
         transaction.displayTransaction();
     }
 }
+
+const std::vector<Transaction> &
+TransactionHistory::getTransactions() const
+{
+    return transactions;
+}
+
+void TransactionHistory::loadTransactions(
+    const std::vector<Transaction> &loadedTransactions)
+{
+    transactions = loadedTransactions;
+
+    if (!transactions.empty())
+    {
+        nextTransactionId =
+            transactions.back().getTransactionId() + 1;
+    }
+}

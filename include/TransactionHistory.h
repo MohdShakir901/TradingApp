@@ -20,6 +20,12 @@ public:
         double price);
 
     void displayHistory() const;
+
+    const std::vector<Transaction> &getTransactions() const;
+
+    void loadTransactions(
+        const std::vector<Transaction> &loadedTransactions
+    );
 };
 
 #endif
