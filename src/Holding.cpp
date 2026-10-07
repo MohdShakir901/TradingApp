@@ -10,8 +10,7 @@ Holding::Holding(Stock stock, int quantity, double averagePrice):
     {
     }
 
-    void Holding::displayHolding() const
-    {
+    void Holding::displayHolding() const{
         cout << "\n========== HOLDING ==========\n";
         cout << "Stock       : " << stock.getSymbol() << endl;
         cout << "Company     : " << stock.getCompanyName() << endl;
@@ -21,25 +20,20 @@ Holding::Holding(Stock stock, int quantity, double averagePrice):
         cout << "Current Value: ₹" << getCurrentValue() << endl;
     }
 
-    Stock Holding::getStock() const
-    {
+    Stock Holding::getStock() const{
         return stock;
     }
 
-    int Holding::getQuantity() const
-    {
+    int Holding::getQuantity() const{
         return quantity;
     }
 
-    double Holding::getAveragePrice() const
-    {
+    double Holding::getAveragePrice() const{
         return averagePrice;
     }
 
-    void Holding::addQuantity(int newQuantity, double price)
-    {
-        if (newQuantity <= 0)
-        {
+    void Holding::addQuantity(int newQuantity, double price){
+        if (newQuantity <= 0){
             return;
         }
 
@@ -51,10 +45,8 @@ Holding::Holding(Stock stock, int quantity, double averagePrice):
         averagePrice = totalCost / quantity;
     }
 
-    bool Holding::removeQuantity(int quantityToRemove)
-    {
-        if (quantityToRemove <= 0 || quantityToRemove > quantity)
-        {
+    bool Holding::removeQuantity(int quantityToRemove){
+        if (quantityToRemove <= 0 || quantityToRemove > quantity){
             return false;
         }
 
@@ -63,7 +55,6 @@ Holding::Holding(Stock stock, int quantity, double averagePrice):
         return true;
     }
 
-    double Holding::getCurrentValue() const
-    {
+    double Holding::getCurrentValue() const{
         return quantity * stock.getPrice();
     }

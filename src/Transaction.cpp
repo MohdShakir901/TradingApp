@@ -18,8 +18,8 @@ Transaction::Transaction(
 {
 }
 
-void Transaction::displayTransaction() const
-{
+void Transaction::displayTransaction() const{
+
     cout << "\n========== TRANSACTION ==========\n";
 
     cout << "Transaction ID : " << transactionId << endl;
@@ -30,32 +30,26 @@ void Transaction::displayTransaction() const
     cout << "Total Amount   : ₹" << totalAmount << endl;
 }
 
-int Transaction::getTransactionId() const
-{
+int Transaction::getTransactionId() const{
     return transactionId;
 }
 
-std::string Transaction::getType() const
-{
+std::string Transaction::getType() const{
     return type;
 }
 
-std::string Transaction::getStockSymbol() const
-{
+std::string Transaction::getStockSymbol() const{
     return stockSymbol;
 }
 
-int Transaction::getQuantity() const
-{
+int Transaction::getQuantity() const{
     return quantity;
 }
 
-double Transaction::getPrice() const
-{
+double Transaction::getPrice() const{
     return price;
 }
 
-double Transaction::getTotalAmount() const
-{
+double Transaction::getTotalAmount() const{
     return totalAmount;
 }

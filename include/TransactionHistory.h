@@ -4,8 +4,8 @@
 #include "Transaction.h"
 #include <vector>
 
-class TransactionHistory
-{
+class TransactionHistory{
+
 private:
     std::vector<Transaction> transactions;
     int nextTransactionId;

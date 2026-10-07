@@ -4,6 +4,7 @@
 #include<string>
 
 class Stock{
+    
     private:
     int stockId;
     std::string symbol;

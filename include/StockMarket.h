@@ -5,6 +5,7 @@
 #include <vector>
 
 class StockMarket{
+    
     private:
        std::vector<Stock> stocks;
 

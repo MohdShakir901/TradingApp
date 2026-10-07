@@ -19,3 +19,13 @@
 53	1397	8129736652884323	CMakeFiles/TradingApplication.dir/src/main.cpp.obj	b2647af0fafe826e
 69	1478	8129736653120037	CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj	108af5f77608771e
 1478	2063	8129736667212334	TradingApplication.exe	c0582d239e4af17c
+416	3297	8130565511828821	CMakeFiles/TradingApplication.dir/src/Holding.cpp.obj	c8514f201b92fe4
+488	3315	8130565512482892	CMakeFiles/TradingApplication.dir/src/TransactionHistory.cpp.obj	108af5f77608771e
+348	3333	8130565511112347	CMakeFiles/TradingApplication.dir/src/Account.cpp.obj	b8d474ab4f03d9bd
+373	3347	8130565511358429	CMakeFiles/TradingApplication.dir/src/Stock.cpp.obj	a6838cff84b28602
+503	3357	8130565512669991	CMakeFiles/TradingApplication.dir/src/StockMarket.cpp.obj	784f56b4c602f4b2
+471	3370	8130565512331263	CMakeFiles/TradingApplication.dir/src/Transaction.cpp.obj	7d75db22f83b7185
+456	3374	8130565512189597	CMakeFiles/TradingApplication.dir/src/Portfolio.cpp.obj	fd097a6f088bb203
+135	3385	8130565508933368	CMakeFiles/TradingApplication.dir/src/main.cpp.obj	b2647af0fafe826e
+530	3478	8130565512906094	CMakeFiles/TradingApplication.dir/src/FileManager.cpp.obj	bfe87301837af4c9
+3479	4363	8130565542379784	TradingApplication.exe	c0582d239e4af17c

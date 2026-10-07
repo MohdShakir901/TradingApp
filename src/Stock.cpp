@@ -17,22 +17,18 @@ void Stock::displayStock() const{
     cout << "Price        : ₹" << price << endl;
 }
 
-int Stock::getStockId() const
-{
+int Stock::getStockId() const{
     return stockId;
 }
 
-std::string Stock::getSymbol() const
-{
+std::string Stock::getSymbol() const{
     return symbol;
 }
 
-std::string Stock::getCompanyName() const
-{
+std::string Stock::getCompanyName() const{
     return companyName;
 }
 
-double Stock::getPrice() const
-{
+double Stock::getPrice() const{
     return price;
 }

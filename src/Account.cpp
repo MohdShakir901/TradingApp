@@ -47,7 +47,6 @@ void Account::withdraw(double amount){
     cout << "New Balance: $" << balance << endl;
 }
 
-double Account::getBalance() const
-{
+double Account::getBalance() const{
     return balance;
 }

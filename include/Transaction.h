@@ -3,8 +3,8 @@
 
 #include <string>
 
-class Transaction
-{
+class Transaction{
+    
 private:
     int transactionId;
     std::string type;

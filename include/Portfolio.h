@@ -5,6 +5,7 @@
 #include <vector>
 
 class Portfolio{
+   
     private:
        std::vector<Holding> holdings;
 

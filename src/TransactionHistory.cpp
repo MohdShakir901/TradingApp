@@ -23,35 +23,33 @@ void TransactionHistory::addTransaction(std::string type, std::string stockSymbo
     nextTransactionId++;
 }
 
-void TransactionHistory::displayHistory() const
-{
-    if (transactions.empty())
-    {
+void TransactionHistory::displayHistory() const{
+
+    if (transactions.empty()){
         cout << "\nNo transactions found.\n";
         return;
     }
 
     cout << "\n========== TRANSACTION HISTORY ==========\n";
 
-    for (const Transaction &transaction : transactions)
-    {
+    for (const Transaction &transaction : transactions){
+
         transaction.displayTransaction();
     }
 }
 
 const std::vector<Transaction> &
-TransactionHistory::getTransactions() const
-{
+TransactionHistory::getTransactions() const{
+
     return transactions;
 }
 
 void TransactionHistory::loadTransactions(
-    const std::vector<Transaction> &loadedTransactions)
-{
+    const std::vector<Transaction> &loadedTransactions){
+
     transactions = loadedTransactions;
 
-    if (!transactions.empty())
-    {
+    if (!transactions.empty()){
         nextTransactionId =
             transactions.back().getTransactionId() + 1;
     }

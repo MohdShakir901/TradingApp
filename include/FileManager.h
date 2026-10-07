@@ -5,8 +5,8 @@
 #include <vector>
 #include <string>
 
-class FileManager
-{
+class FileManager{
+    
 public:
     static void saveTransactions(
         const std::vector<Transaction> &transactions,

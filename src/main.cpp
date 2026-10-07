@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
+
     Account account(1001, "Shakir", "shakir@example.com", 50000.0);
     
     Portfolio portfolio;
@@ -39,8 +39,8 @@ int main()
 
     int choice;
 
-    do
-    {
+    do{
+
         cout << "\n================================\n";
         cout << "       TRADING APPLICATION\n";
         cout << "================================\n";
@@ -58,8 +58,8 @@ int main()
         cout << "\nEnter your choice: ";
         cin >> choice;
 
-        switch (choice)
-        {
+        switch (choice){
+
         case 1:
             account.showAccountInfo();
             break;
@@ -103,8 +103,7 @@ int main()
 
             Stock *stock = market.getStockById(stockId);
 
-            if (stock == nullptr)
-            {
+            if (stock == nullptr){
                 cout << "Stock not found.\n";
                 break;
             }
@@ -124,8 +123,7 @@ int main()
 
             cout << "\nTotal Cost: ₹" << totalCost << endl;
 
-            if (totalCost > account.getBalance())
-            {
+            if (totalCost > account.getBalance()){
                 cout << "Insufficient balance.\n";
                 break;
             }
@@ -164,8 +162,7 @@ int main()
 
             Stock *stock = market.getStockById(stockID);
 
-            if (stock == nullptr)
-            {
+            if (stock == nullptr){
                 cout << "Stock not found.\n";
                 break;
             }
@@ -173,8 +170,7 @@ int main()
             cout << "\nEnter quantity to sell: ";
             cin >> quantity;
 
-            if (quantity <= 0)
-            {
+            if (quantity <= 0){
                 cout << "Invalid quantity.\n";
                 break;
             }
@@ -183,8 +179,7 @@ int main()
 
             cout << "\nSale Amount: ₹" << saleAmount << endl;
 
-            if (portfolio.sellStock(stock->getSymbol(), quantity))
-            {
+            if (portfolio.sellStock(stock->getSymbol(), quantity)){
                 account.deposit(saleAmount);
 
                 transactionHistory.addTransaction(

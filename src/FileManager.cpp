@@ -7,18 +7,15 @@ using namespace std;
 
 void FileManager::saveTransactions(
     const vector<Transaction> &transactions,
-    const string &filename)
-{
+    const string &filename){
     ofstream file(filename);
 
-    if (!file.is_open())
-    {
+    if (!file.is_open()){
         cout << "Error: Could not open file for writing.\n";
         return;
     }
 
-    for (const Transaction &transaction : transactions)
-    {
+    for (const Transaction &transaction : transactions){
         file << transaction.getTransactionId() << "|"
              << transaction.getType() << "|"
              << transaction.getStockSymbol() << "|"
@@ -32,21 +29,18 @@ void FileManager::saveTransactions(
 }
 
 vector<Transaction> FileManager::loadTransactions(
-    const string &filename)
-{
+    const string &filename){
     vector<Transaction> transactions;
 
     ifstream file(filename);
 
-    if (!file.is_open())
-    {
+    if (!file.is_open()){
         return transactions;
     }
 
     string line;
 
-    while (getline(file, line))
-    {
+    while (getline(file, line)){
         stringstream ss(line);
 
         string id;
